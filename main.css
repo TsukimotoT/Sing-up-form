@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    margin: 200px auto;
+    justify-content: center;
+    gap: 90px;
+   
+  
+}
+
+.left{
+    width: 33%;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 160px;
+
+}
+
+.left p{
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.right{
+    width: 30%;
+
+}
+
+.title{
+    width: 80%;
+}
+
+.title span{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form{
+    background-color: white;
+    padding: 10px;
+    width: 660px;
+    height: 510;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+
+.try{
+    background-color: rgb(97, 27, 228);
+    color: white;
+    padding: 24px;
+    text-align: center;
+    border-radius: 8px;
+    width: 660px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    height: 70px;
+    
+}
+
+.text{
+    width: 570px;
+    height: 70px;
+    text-indent: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(197, 192, 192);
+    
+    
+}
+
+.trial{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    width: 480px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.terms{
+    color: hsl(246, 25%, 77%);
+    font-style: 11px;
+}
+
+.terms a{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+
+::placeholder{
+    font-size: 14px;  
+    font-weight: 600;
+    
+}
+
+.trial:hover{
+    background-color: hsl(154, 57%, 45%);
+}
+
+.try:hover{
+    background-color: rgb(67, 17, 161);
+}
+
+
+a:hover{
+    color: hsl(0, 38%, 46%);
+}
+
+.success{
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error-text{
+    color: hsl(0, 100%, 74%);
+}
+
+span{
+    color: hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.text-form.error input{
+    border: 2px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+    
+}
+
+.text-form.error input::placeholder {
+	color: hsl(0, 100%, 74%);
+}
+
+.text-form img {
+	opacity: 0;
+    position: absolute;
+    right: 294px;
+    transform: translateY(20px);
+    height: 28px;
+}
+
+.text-form.error img {
+	opacity: 1;
+}
+
+.text-form span {
+    opacity: 0;
+}
+
